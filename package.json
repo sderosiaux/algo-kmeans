@@ -1,5 +1,5 @@
 {
-  "name": "testing",
+  "name": "algo-kmeans",
   "version": "0.0.1",
   "description": "",
   "main": "kmeans.js",
@@ -7,7 +7,7 @@
     "test": "mocha --compilers js:babel/register",
     "test-watch": "mocha watch --compilers js:babel/register"
   },
-  "author": "",
+  "author": "chtefi <derste@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "babel": "^4.7.16",
