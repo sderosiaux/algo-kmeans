@@ -1,0 +1,16 @@
+{
+  "name": "testing",
+  "version": "0.0.1",
+  "description": "",
+  "main": "kmeans.js",
+  "scripts": {
+    "test": "mocha --compilers js:babel/register",
+    "test-watch": "mocha watch --compilers js:babel/register"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "babel": "^4.7.16",
+    "chai": "^2.1.2"
+  }
+}
