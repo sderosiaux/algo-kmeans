@@ -1,6 +1,10 @@
-# How to
+# Algo-kmeans [build status](https://travis-ci.org/chtefi/algo-kmeans.svg?branch=master)
 
-It's using ES6 syntax. Make sure to run it using Babel for instance.
+Simple implementation of the k-means clustering method.
+
+# How to use
+
+It's using ES6 (barely) syntax. Make sure to run it using Babel for instance.
 
 ```javascript
 var kmeans = require('algo-kmeans');
@@ -35,6 +39,12 @@ npm install algo-kmeans
 ```
 npm run test
 ```
+
+# TODO
+
+- Reorganise structure (files, directories)
+- Use full ES6 power
+- Add eslint
 
 # License
 
