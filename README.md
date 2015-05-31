@@ -1,4 +1,4 @@
-# Algo-kmeans [build status](https://travis-ci.org/chtefi/algo-kmeans.svg?branch=master)
+# Algo-kmeans ![build status](https://travis-ci.org/chtefi/algo-kmeans.svg?branch=master)
 
 Simple implementation of the k-means clustering method.
 
