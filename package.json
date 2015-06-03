@@ -10,7 +10,7 @@
   "author": "chtefi <derste@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "babel": "^4.7.16",
-    "chai": "^2.1.2"
+    "babel": "^5.4.7",
+    "chai": "^2.3.0"
   }
 }
