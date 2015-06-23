@@ -1,7 +1,7 @@
 var expect = require('chai').expect;
 var kmeans = require('../kmeans');
 var Cluster = require('../kmeans').Cluster;
-var Point = require('../kmeans').Point;
+var Point = require('../Point.js');
 
 describe('kmeans algorithm', () => {
 

@@ -1,3 +1,5 @@
+import Point from './Point.js';
+
 // ----------------------------------------------------------------------------
 
 module.exports = (points, { nbClusters, initCentroids }) => {
@@ -135,26 +137,3 @@ Cluster.prototype.computeCentroid = function() {
 
 // ----------------------------------------------------------------------------
 
-module.exports.Point = Point;
-
-function Point(x, y, z) {
-    this.x = x;
-    this.y = y;
-    this.z = z;
-    this.cluster = null;
-}
-
-Point.prototype.distanceTo = function(point) {
-    var dx = point.x - this.x;
-    var dy = point.y - this.y;
-    var dz = point.z - this.z;
-    return Math.sqrt(dx * dx + dy * dy + dz * dz);
-};
-
-Point.prototype.distanceToCentroid = function() {
-	return this.cluster ? this.distanceTo(this.cluster.centroid) : null;
-};
-
-Point.prototype.equals = function(point) {
-	return this.x === point.x && this.y === point.y && this.z === point.z;
-};
