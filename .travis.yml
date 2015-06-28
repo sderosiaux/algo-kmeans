@@ -1,8 +1,7 @@
 language: node_js
 
 before_install:
-  npm install --global mocha
-  pip install codecov
+  npm install --global mocha && pip install codecov
 
 after_success:
   codecov
