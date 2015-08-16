@@ -1,4 +1,4 @@
-# Algo-kmeans ![build status](https://travis-ci.org/chtefi/algo-kmeans.svg?branch=master) [![Dependency Status](https://david-dm.org/chtefi/algo-kmeans.svg)](https://david-dm.org/chtefi/algo-kmeans) [![devDependency Status](https://david-dm.org/chtefi/algo-kmeans/dev-status.svg)](https://david-dm.org/chtefi/algo-kmeans#info=devDependencies)
+# Algo-kmeans ![build status](https://travis-ci.org/chtefi/algo-kmeans.svg?branch=master) [![Coverage Status](https://coveralls.io/repos/chtefi/algo-kmeans/badge.svg?branch=master&service=github)](https://coveralls.io/github/chtefi/algo-kmeans?branch=master) [![Dependency Status](https://david-dm.org/chtefi/algo-kmeans.svg)](https://david-dm.org/chtefi/algo-kmeans) [![devDependency Status](https://david-dm.org/chtefi/algo-kmeans/dev-status.svg)](https://david-dm.org/chtefi/algo-kmeans#info=devDependencies) 
 
 Simple implementation of the k-means clustering method.
 

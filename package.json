@@ -14,6 +14,7 @@
     "build:umd": "webpack src/index.js dist/kmeans.js && set NODE_ENV=production&& webpack src/index.js dist/kmeans.min.js",
     "test:watch": "./node_modules/.bin/_mocha watch",
     "test:cov": "babel-node ./node_modules/isparta/bin/isparta cover ./node_modules/mocha/bin/_mocha",
+    "test:coveralls": "./node_modules/.bin/_mocha --compilers js:babel/register -R mocha-lcov-reporter && cat ./coverage/lcov.info | node ./node_modules/coveralls/bin/coveralls.js",
     "lint": "eslint src test"    
   },
   "author": "chtefi",
