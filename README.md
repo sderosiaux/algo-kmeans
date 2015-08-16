@@ -2,7 +2,7 @@
 
 Simple implementation of the k-means clustering method.
 
-# How to use
+### How to use
 
 ```javascript
 import kmeans, { Point } from 'algo-kmeans';
@@ -28,7 +28,7 @@ const clusters = kmeans(points, {
 });
 ```
 
-# Install
+### Install
 
 With [npm](https://npmjs.org) do:
 
@@ -36,11 +36,29 @@ With [npm](https://npmjs.org) do:
 npm install algo-kmeans
 ```
 
-# Testing
+### Commands
 
 ```
-npm test
+Lifecycle scripts included in algo-kmeans:
+  test
+    _mocha --compilers js:babel/register
+  prepublish
+    npm run build && npm run build:umd
+
+available via `npm run-script`:
+  build
+    babel src --out-dir lib
+  clean
+    rimraf lib dist
+  build:umd
+    webpack src/index.js dist/kmeans.js && set NODE_ENV=production&& webpack src/index.js dist/kmeans.min.js
+  test:watch
+    _mocha watch
+  test:cov
+    babel-node ./node_modules/isparta/bin/isparta cover ./node_modules/mocha/bin/_mocha
+  lint
+    eslint src test
 ```
-# License
+### License
 
 MIT

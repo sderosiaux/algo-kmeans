@@ -1,0 +1,4 @@
+# used for istanbul/isparta to care only about src
+# otherwise it crashes https://github.com/douglasduteil/isparta/issues/47
+instrumentation:
+  root: src
