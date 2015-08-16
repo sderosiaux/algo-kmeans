@@ -4,9 +4,9 @@
   "description": "Simple implementation of the k-means clustering method.",
   "main": "src/index.js",
   "scripts": {
-    "//": "we can't put --compilers js:babel/register in the global mocha.opts",
-    "//": "otherwise the test:cov fails because babel/polyfill is included twice",
-    "//": "once with mocha.opts and one with babel-node",
+    "//1": "we can't put --compilers js:babel/register in the global mocha.opts",
+    "//2": "otherwise the test:cov fails because babel/polyfill is included twice",
+    "//3": "once with mocha.opts and one with babel-node",
     "test": "./node_modules/.bin/_mocha --compilers js:babel/register",
     "prepublish": "npm run build && npm run build:umd",
     "build": "babel src --out-dir lib",
@@ -15,7 +15,7 @@
     "test:watch": "./node_modules/.bin/_mocha watch",
     "test:cov": "babel-node ./node_modules/isparta/bin/isparta cover ./node_modules/mocha/bin/_mocha",
     "test:coveralls": "./node_modules/.bin/_mocha --compilers js:babel/register -R mocha-lcov-reporter && cat ./coverage/lcov.info | node ./node_modules/coveralls/bin/coveralls.js",
-    "lint": "eslint src test"    
+    "lint": "eslint src test"
   },
   "author": "chtefi",
   "license": "MIT",
@@ -25,12 +25,14 @@
     "babel-eslint": "^4.0.8",
     "babel-loader": "^5.3.2",
     "chai": "^2.3.0",
+    "coveralls": "^2.11.4",
     "eslint": "^1.1.0",
     "eslint-config-airbnb": "0.0.7",
     "eslint-plugin-react": "^3.2.3",
     "isparta": "^3.0.3",
     "istanbul": "^0.3.17",
     "mocha": "^2.2.5",
+    "mocha-lcov-reporter": "0.0.2",
     "rimraf": "^2.4.2",
     "webpack": "^1.11.0"
   },
