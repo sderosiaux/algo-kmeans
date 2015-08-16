@@ -64,7 +64,7 @@ describe('kmeans algorithm', () => {
         50 - Math.random() * 100,
         50 - Math.random() * 100,
       ));
-    };
+    }
 
     const manyClusters = kmeans(manyPoints, { nbClusters: 5 });
     manyPoints.forEach(p => {
